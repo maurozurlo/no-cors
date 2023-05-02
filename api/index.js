@@ -32,7 +32,7 @@ app.all("*", (req, res) => {
   request({
     url: targetUrl + req.url,
     method: req.method,
-    headers: { Authorization: req.header("Authorization") },
+    //headers: { Authorization: req.header("Authorization") },
   }).pipe(res);
 
   // Log memory usage every logInterval milliseconds
